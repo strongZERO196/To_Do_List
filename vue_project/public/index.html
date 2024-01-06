@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+
+<head>
+    <!-- 文字エンコーディングの設定 -->
     <meta charset="utf-8">
+    
+    <!-- Internet Explorerの最新のレンダリングモードを使用 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- レスポンシブデザインの設定 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <!-- サイトのファビコンを設定 -->
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    
+    <!-- サイトのタイトル（webpackの変数から取得） -->
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
+    
+    <!-- 外部CSSファイルをリンク -->
+    <link rel="stylesheet" type="text/css" href="abc.css">
+</head>
+
+<body>
+    <!-- JavaScriptが無効な場合のメッセージ -->
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+    <!-- Vueアプリがマウントされる要素 -->
+    <div id="app">
+    </div>
+    <!-- Vueアプリがマウントされる要素 -->
+    <div id="app2">
+    </div>
+    <!-- Vueアプリがマウントされる要素 -->
+    <div id="app3">
+    </div>
+    <div id="app4">
+    </div>
+
+    <!-- webpackによってビルドされたファイルがここに挿入される（自動的に） -->
+
+
   </body>
+
 </html>
