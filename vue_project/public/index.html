@@ -16,9 +16,6 @@
     
     <!-- サイトのタイトル（webpackの変数から取得） -->
     <title><%= htmlWebpackPlugin.options.title %></title>
-    
-    <!-- 外部CSSファイルをリンク -->
-    <link rel="stylesheet" type="text/css" href="abc.css">
 </head>
 
 <body>
@@ -26,22 +23,8 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-
     <!-- Vueアプリがマウントされる要素 -->
     <div id="app">
     </div>
-    <!-- Vueアプリがマウントされる要素 -->
-    <div id="app2">
-    </div>
-    <!-- Vueアプリがマウントされる要素 -->
-    <div id="app3">
-    </div>
-    <div id="app4">
-    </div>
-
-    <!-- webpackによってビルドされたファイルがここに挿入される（自動的に） -->
-
-
   </body>
-
 </html>

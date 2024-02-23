@@ -33,6 +33,8 @@ services:
       - ../vue_project:/usr/src/app:cached
     stdin_open: true
     tty: true
+    environment:
+      VUE_APP_OPENAI_API_KEY: $VUE_APP_OPENAI_API_KEY
 volumes:
   mysql_db:
     driver: local
